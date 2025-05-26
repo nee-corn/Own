@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+:root {
+  --color1: #1e1e24;
+  --color2: #85baa1;
+  --color3: #ffede1;
+  --color4: #957186;
+  --color5: #be7c4d;
+}
+
+.color1 {
+  background-color: var(--color1);
+}
+
+.color2 {
+  background-color: var(--color2);
+}
+.color3 {
+  background-color: var(--color3);
+}
+.color4 {
+  background-color: var(--color4);
+}
+.color5 {
+  background-color: var(--color5);
+}

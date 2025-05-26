@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { ErrorPage } from "./pages/ErrorPage";
 import { HomePage } from "./pages/HomePage";
+import { Propos } from "./pages/Propos";
 // import "./App.css";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
           path: "",
           element: <HomePage />,
         },
+        {
+          path: "/a_propos",
+          element: <Propos />,
+        },
       ],
     },
   ]);
@@ -29,7 +34,7 @@ function App() {
 
 // Layout component
 function Root() {
-  return <HomePage></HomePage>;
+  return <Outlet />;
 }
 
 export default App;
