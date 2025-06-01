@@ -8,6 +8,7 @@ import {
 import { ErrorPage } from "./pages/ErrorPage";
 import { HomePage } from "./pages/HomePage";
 import { Propos } from "./pages/Propos";
+import { NavBar } from "./components/NavBar";
 // import "./App.css";
 
 function App() {
@@ -34,7 +35,12 @@ function App() {
 
 // Layout component
 function Root() {
-  return <Outlet />;
+  return (
+    <>
+      <NavBar />
+      <Outlet />;
+    </>
+  );
 }
 
 export default App;

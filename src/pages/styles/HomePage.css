@@ -39,44 +39,6 @@
   line-height: 1.6;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.primary-button {
-  background-color: var(--color4);
-  color: var(--color3);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.primary-button:hover {
-  background-color: var(--color5);
-  transform: translateY(-2px);
-}
-
-.secondary-button {
-  background-color: transparent;
-  color: var(--color2);
-  border: 2px solid var(--color2);
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.secondary-button:hover {
-  border-color: var(--color4);
-  color: var(--color4);
-  transform: translateY(-2px);
-}
-
 .hero-image {
   flex: 1;
   display: flex;

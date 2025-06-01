@@ -1,27 +1,35 @@
 import "./Styles/NavBar.css";
 import "../index.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
 import { Propos } from "../pages/Propos";
 
 export const NavBar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path ? "navbar-link active" : "navbar-link";
+  };
 
   return (
     <>
       <div className="navbar">
         <div className="navbar-logo">Own</div>
         <div className="navbar-links">
-          <a className="navbar-link active" onClick={() => navigate("/")}>
+          <a className={isActive("/")} onClick={() => navigate("/")}>
             Accueil
           </a>
-          <a className="navbar-link" onClick={() => navigate("/a_propos")}>
+          <a
+            className={isActive("/a_propos")}
+            onClick={() => navigate("/a_propos")}
+          >
             À propos
           </a>
-          <a href="#" className="navbar-link">
-            Services
+          <a href="#" className={isActive("/game")}>
+            Games
           </a>
-          <a href="#" className="navbar-link">
+          <a href="#" className={isActive("/contact")}>
             Contact
           </a>
         </div>

@@ -5,14 +5,11 @@ import "./styles/HomePage.css";
 export const HomePage = () => {
   return (
     <>
-      <NavBar />
       <div className="home-container">
         <section className="hero-section">
           <div className="hero-content">
-            <h1 className="hero-title">Bienvenue sur MonSite</h1>
-            <p className="hero-subtitle">
-              Découvrez notre univers créatif et innovant
-            </p>
+            <h1 className="hero-title">Bienvenue sur Own</h1>
+            <p className="hero-subtitle">Essayer l'un de mes projet</p>
             <div className="hero-buttons">
               <button className="primary-button">Commencer</button>
               <button className="secondary-button">En savoir plus</button>
